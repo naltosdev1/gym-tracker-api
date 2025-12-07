@@ -12,7 +12,7 @@ public interface ExerciseService {
 
     List<Exercise> findByUserId(Long userId);
 
-    Exercise updateExercise(Exercise exercise, Long userId);
+    Exercise updateExercise(ExerciseDto exercise, Long userId);
 
     void deleteExercise(Long exerciseId);
 }

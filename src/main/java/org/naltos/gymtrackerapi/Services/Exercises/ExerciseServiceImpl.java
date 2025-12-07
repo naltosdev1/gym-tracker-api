@@ -35,11 +35,12 @@ public class ExerciseServiceImpl implements ExerciseService {
 
     @Override
     public List<Exercise> findByUserId(Long userId) {
-        return List.of();
+        User user = userRepository.findById(userId).orElseThrow(() -> new RuntimeException("User not found"));
+        return user.getExercises();
     }
 
     @Override
-    public Exercise updateExercise(Exercise exercise, Long userId) {
+    public Exercise updateExercise(ExerciseDto exercise, Long userId) {
         return null;
     }
 
