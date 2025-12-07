@@ -1,1 +1,1 @@
-# gym-tracker-api
+# GymTracker API
